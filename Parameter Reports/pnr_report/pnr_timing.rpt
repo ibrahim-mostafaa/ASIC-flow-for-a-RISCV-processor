@@ -1,0 +1,913 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : riscv_core
+Version: G-2012.06-ICC-SP2
+Date   : Mon Dec 25 15:49:22 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: low_temp   Library: NangateOpenCellLibrary_ff1p25vn40c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : -40/-40/-40
+
+Information: Percent of Arnoldi-based delays =  0.00%
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_61/S (FA_X1)                        0.09 *     0.50 r
+  u_mul/mult_123_S2_3_60/S (FA_X1)                        0.05 *     0.55 f
+  u_mul/mult_123_S2_4_59/S (FA_X1)                        0.05 *     0.60 r
+  u_mul/mult_123_S2_5_58/S (FA_X1)                        0.05 *     0.65 f
+  u_mul/mult_123_S2_6_57/S (FA_X1)                        0.05 *     0.69 r
+  u_mul/mult_123_S2_7_56/S (FA_X1)                        0.04 *     0.74 f
+  u_mul/mult_123_S2_8_55/S (FA_X1)                        0.05 *     0.79 r
+  u_mul/mult_123_S2_9_54/S (FA_X1)                        0.04 *     0.83 f
+  u_mul/mult_123_S2_10_53/S (FA_X1)                       0.05 *     0.88 r
+  u_mul/mult_123_S2_11_52/S (FA_X1)                       0.04 *     0.92 f
+  u_mul/mult_123_S2_12_51/S (FA_X1)                       0.05 *     0.97 r
+  u_mul/mult_123_S2_13_50/S (FA_X1)                       0.04 *     1.01 f
+  u_mul/mult_123_S2_14_49/S (FA_X1)                       0.05 *     1.06 r
+  u_mul/mult_123_S2_15_48/S (FA_X1)                       0.04 *     1.10 f
+  u_mul/mult_123_S2_16_47/S (FA_X1)                       0.05 *     1.15 r
+  u_mul/mult_123_S2_17_46/S (FA_X1)                       0.04 *     1.19 f
+  u_mul/mult_123_S2_18_45/S (FA_X1)                       0.05 *     1.24 r
+  u_mul/mult_123_S2_19_44/S (FA_X1)                       0.04 *     1.28 f
+  u_mul/mult_123_S2_20_43/S (FA_X1)                       0.05 *     1.33 r
+  u_mul/mult_123_S2_21_42/S (FA_X1)                       0.04 *     1.37 f
+  u_mul/mult_123_S2_22_41/S (FA_X1)                       0.05 *     1.42 r
+  u_mul/mult_123_S2_23_40/S (FA_X1)                       0.04 *     1.46 f
+  u_mul/mult_123_S2_24_39/S (FA_X1)                       0.05 *     1.51 r
+  u_mul/mult_123_S2_25_38/S (FA_X1)                       0.04 *     1.55 f
+  u_mul/mult_123_S2_26_37/S (FA_X1)                       0.05 *     1.60 r
+  u_mul/mult_123_S2_27_36/S (FA_X1)                       0.04 *     1.64 f
+  u_mul/mult_123_S2_28_35/S (FA_X1)                       0.05 *     1.69 r
+  u_mul/mult_123_S2_29_34/S (FA_X1)                       0.04 *     1.74 f
+  u_mul/mult_123_S2_30_33/S (FA_X1)                       0.05 *     1.78 r
+  u_mul/mult_123_S2_31_32/S (FA_X1)                       0.04 *     1.83 f
+  u_mul/mult_123_S2_32_31/S (FA_X1)                       0.05 *     1.87 r
+  u_mul/mult_123_S2_33_30/S (FA_X1)                       0.04 *     1.92 f
+  u_mul/mult_123_S2_34_29/S (FA_X1)                       0.05 *     1.96 r
+  u_mul/mult_123_S2_35_28/S (FA_X1)                       0.04 *     2.01 f
+  u_mul/mult_123_S2_36_27/S (FA_X1)                       0.05 *     2.05 r
+  u_mul/mult_123_S2_37_26/S (FA_X1)                       0.04 *     2.10 f
+  u_mul/mult_123_S2_38_25/S (FA_X1)                       0.05 *     2.15 r
+  u_mul/mult_123_S2_39_24/S (FA_X1)                       0.05 *     2.19 f
+  u_mul/mult_123_S2_40_23/S (FA_X1)                       0.05 *     2.24 r
+  u_mul/mult_123_S2_41_22/S (FA_X1)                       0.04 *     2.28 f
+  u_mul/mult_123_S2_42_21/S (FA_X1)                       0.05 *     2.33 r
+  u_mul/mult_123_S2_43_20/S (FA_X1)                       0.04 *     2.37 f
+  u_mul/mult_123_S2_44_19/S (FA_X1)                       0.05 *     2.42 r
+  u_mul/mult_123_S2_45_18/S (FA_X1)                       0.05 *     2.47 f
+  u_mul/mult_123_S2_46_17/S (FA_X1)                       0.05 *     2.51 r
+  u_mul/mult_123_S2_47_16/S (FA_X1)                       0.04 *     2.56 f
+  u_mul/mult_123_S2_48_15/S (FA_X1)                       0.05 *     2.61 r
+  u_mul/mult_123_S2_49_14/S (FA_X1)                       0.04 *     2.65 f
+  u_mul/mult_123_S2_50_13/S (FA_X1)                       0.05 *     2.70 r
+  u_mul/mult_123_S2_51_12/S (FA_X1)                       0.04 *     2.74 f
+  u_mul/mult_123_S2_52_11/S (FA_X1)                       0.05 *     2.79 r
+  u_mul/mult_123_S2_53_10/S (FA_X1)                       0.04 *     2.83 f
+  u_mul/mult_123_S2_54_9/S (FA_X1)                        0.05 *     2.88 r
+  u_mul/mult_123_S2_55_8/S (FA_X1)                        0.04 *     2.92 f
+  u_mul/mult_123_S2_56_7/S (FA_X1)                        0.05 *     2.97 r
+  u_mul/mult_123_S2_57_6/S (FA_X1)                        0.05 *     3.02 f
+  u_mul/mult_123_S2_58_5/S (FA_X1)                        0.05 *     3.07 r
+  u_mul/mult_123_S2_59_4/S (FA_X1)                        0.05 *     3.12 f
+  u_mul/mult_123_S2_60_3/S (FA_X1)                        0.05 *     3.17 r
+  u_mul/mult_123_S2_61_2/S (FA_X1)                        0.04 *     3.21 f
+  u_mul/mult_123_S2_62_1/S (FA_X1)                        0.05 *     3.26 r
+  u_mul/mult_123_S4_0/S (FA_X1)                           0.05 *     3.31 f
+  u_mul/result_e2_q_reg_31_/D (SDFFR_X1)                  0.00 *     3.31 f
+  data arrival time                                                  3.31
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_31_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.04       8.08
+  data required time                                                 8.08
+  --------------------------------------------------------------------------
+  data required time                                                 8.08
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.77
+
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_30_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_60/S (FA_X1)                        0.09 *     0.50 r
+  u_mul/mult_123_S2_3_59/S (FA_X1)                        0.05 *     0.55 f
+  u_mul/mult_123_S2_4_58/S (FA_X1)                        0.05 *     0.60 r
+  u_mul/mult_123_S2_5_57/S (FA_X1)                        0.04 *     0.64 f
+  u_mul/mult_123_S2_6_56/S (FA_X1)                        0.05 *     0.69 r
+  u_mul/mult_123_S2_7_55/S (FA_X1)                        0.04 *     0.73 f
+  u_mul/mult_123_S2_8_54/S (FA_X1)                        0.05 *     0.78 r
+  u_mul/mult_123_S2_9_53/S (FA_X1)                        0.04 *     0.82 f
+  u_mul/mult_123_S2_10_52/S (FA_X1)                       0.05 *     0.87 r
+  u_mul/mult_123_S2_11_51/S (FA_X1)                       0.04 *     0.92 f
+  u_mul/mult_123_S2_12_50/S (FA_X1)                       0.05 *     0.96 r
+  u_mul/mult_123_S2_13_49/S (FA_X1)                       0.04 *     1.01 f
+  u_mul/mult_123_S2_14_48/S (FA_X1)                       0.05 *     1.05 r
+  u_mul/mult_123_S2_15_47/S (FA_X1)                       0.04 *     1.10 f
+  u_mul/mult_123_S2_16_46/S (FA_X1)                       0.05 *     1.14 r
+  u_mul/mult_123_S2_17_45/S (FA_X1)                       0.04 *     1.19 f
+  u_mul/mult_123_S2_18_44/S (FA_X1)                       0.05 *     1.23 r
+  u_mul/mult_123_S2_19_43/S (FA_X1)                       0.04 *     1.28 f
+  u_mul/mult_123_S2_20_42/S (FA_X1)                       0.05 *     1.32 r
+  u_mul/mult_123_S2_21_41/S (FA_X1)                       0.04 *     1.37 f
+  u_mul/mult_123_S2_22_40/S (FA_X1)                       0.05 *     1.41 r
+  u_mul/mult_123_S2_23_39/S (FA_X1)                       0.04 *     1.46 f
+  u_mul/mult_123_S2_24_38/S (FA_X1)                       0.05 *     1.51 r
+  u_mul/mult_123_S2_25_37/S (FA_X1)                       0.04 *     1.55 f
+  u_mul/mult_123_S2_26_36/S (FA_X1)                       0.05 *     1.60 r
+  u_mul/mult_123_S2_27_35/S (FA_X1)                       0.04 *     1.64 f
+  u_mul/mult_123_S2_28_34/S (FA_X1)                       0.05 *     1.69 r
+  u_mul/mult_123_S2_29_33/S (FA_X1)                       0.04 *     1.73 f
+  u_mul/mult_123_S2_30_32/S (FA_X1)                       0.05 *     1.78 r
+  u_mul/mult_123_S2_31_31/S (FA_X1)                       0.04 *     1.82 f
+  u_mul/mult_123_S2_32_30/S (FA_X1)                       0.05 *     1.87 r
+  u_mul/mult_123_S2_33_29/S (FA_X1)                       0.04 *     1.91 f
+  u_mul/mult_123_S2_34_28/S (FA_X1)                       0.05 *     1.96 r
+  u_mul/mult_123_S2_35_27/S (FA_X1)                       0.04 *     2.00 f
+  u_mul/mult_123_S2_36_26/S (FA_X1)                       0.05 *     2.05 r
+  u_mul/mult_123_S2_37_25/S (FA_X1)                       0.04 *     2.10 f
+  u_mul/mult_123_S2_38_24/S (FA_X1)                       0.05 *     2.14 r
+  u_mul/mult_123_S2_39_23/S (FA_X1)                       0.04 *     2.19 f
+  u_mul/mult_123_S2_40_22/S (FA_X1)                       0.05 *     2.23 r
+  u_mul/mult_123_S2_41_21/S (FA_X1)                       0.04 *     2.28 f
+  u_mul/mult_123_S2_42_20/S (FA_X1)                       0.05 *     2.33 r
+  u_mul/mult_123_S2_43_19/S (FA_X1)                       0.05 *     2.37 f
+  u_mul/mult_123_S2_44_18/S (FA_X1)                       0.05 *     2.42 r
+  u_mul/mult_123_S2_45_17/S (FA_X1)                       0.04 *     2.46 f
+  u_mul/mult_123_S2_46_16/S (FA_X1)                       0.05 *     2.51 r
+  u_mul/mult_123_S2_47_15/S (FA_X1)                       0.04 *     2.56 f
+  u_mul/mult_123_S2_48_14/S (FA_X1)                       0.05 *     2.60 r
+  u_mul/mult_123_S2_49_13/S (FA_X1)                       0.04 *     2.65 f
+  u_mul/mult_123_S2_50_12/S (FA_X1)                       0.05 *     2.69 r
+  u_mul/mult_123_S2_51_11/S (FA_X1)                       0.04 *     2.74 f
+  u_mul/mult_123_S2_52_10/S (FA_X1)                       0.05 *     2.78 r
+  u_mul/mult_123_S2_53_9/S (FA_X1)                        0.04 *     2.83 f
+  u_mul/mult_123_S2_54_8/S (FA_X1)                        0.05 *     2.88 r
+  u_mul/mult_123_S2_55_7/S (FA_X1)                        0.04 *     2.92 f
+  u_mul/mult_123_S2_56_6/S (FA_X1)                        0.05 *     2.97 r
+  u_mul/mult_123_S2_57_5/S (FA_X1)                        0.05 *     3.02 f
+  u_mul/mult_123_S2_58_4/S (FA_X1)                        0.05 *     3.07 r
+  u_mul/mult_123_S2_59_3/S (FA_X1)                        0.05 *     3.12 f
+  u_mul/mult_123_S2_60_2/S (FA_X1)                        0.05 *     3.16 r
+  u_mul/mult_123_S2_61_1/S (FA_X1)                        0.04 *     3.21 f
+  u_mul/mult_123_S1_62_0/S (FA_X1)                        0.05 *     3.26 r
+  u_mul/result_e2_q_reg_30_/D (SDFFR_X1)                  0.00 *     3.26 r
+  data arrival time                                                  3.26
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_30_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.03       8.08
+  data required time                                                 8.08
+  --------------------------------------------------------------------------
+  data required time                                                 8.08
+  data arrival time                                                 -3.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.82
+
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_29_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_61/S (FA_X1)                        0.09 *     0.50 r
+  u_mul/mult_123_S2_3_60/S (FA_X1)                        0.05 *     0.55 f
+  u_mul/mult_123_S2_4_57/S (FA_X1)                        0.05 *     0.60 r
+  u_mul/mult_123_S2_5_56/S (FA_X1)                        0.04 *     0.64 f
+  u_mul/mult_123_S2_6_55/S (FA_X1)                        0.05 *     0.69 r
+  u_mul/mult_123_S2_7_54/S (FA_X1)                        0.04 *     0.73 f
+  u_mul/mult_123_S2_8_53/S (FA_X1)                        0.05 *     0.78 r
+  u_mul/mult_123_S2_9_52/S (FA_X1)                        0.04 *     0.83 f
+  u_mul/mult_123_S2_10_51/S (FA_X1)                       0.05 *     0.87 r
+  u_mul/mult_123_S2_11_50/S (FA_X1)                       0.04 *     0.92 f
+  u_mul/mult_123_S2_12_49/S (FA_X1)                       0.05 *     0.96 r
+  u_mul/mult_123_S2_13_48/S (FA_X1)                       0.04 *     1.01 f
+  u_mul/mult_123_S2_14_47/S (FA_X1)                       0.05 *     1.05 r
+  u_mul/mult_123_S2_15_46/S (FA_X1)                       0.04 *     1.10 f
+  u_mul/mult_123_S2_16_45/S (FA_X1)                       0.05 *     1.14 r
+  u_mul/mult_123_S2_17_44/S (FA_X1)                       0.04 *     1.19 f
+  u_mul/mult_123_S2_18_43/S (FA_X1)                       0.05 *     1.23 r
+  u_mul/mult_123_S2_19_42/S (FA_X1)                       0.04 *     1.28 f
+  u_mul/mult_123_S2_20_41/S (FA_X1)                       0.05 *     1.32 r
+  u_mul/mult_123_S2_21_40/S (FA_X1)                       0.04 *     1.37 f
+  u_mul/mult_123_S2_22_39/S (FA_X1)                       0.05 *     1.42 r
+  u_mul/mult_123_S2_23_38/S (FA_X1)                       0.04 *     1.46 f
+  u_mul/mult_123_S2_24_37/S (FA_X1)                       0.05 *     1.51 r
+  u_mul/mult_123_S2_25_36/S (FA_X1)                       0.04 *     1.55 f
+  u_mul/mult_123_S2_26_35/S (FA_X1)                       0.05 *     1.60 r
+  u_mul/mult_123_S2_27_34/S (FA_X1)                       0.04 *     1.64 f
+  u_mul/mult_123_S2_28_33/S (FA_X1)                       0.05 *     1.69 r
+  u_mul/mult_123_S2_29_32/S (FA_X1)                       0.04 *     1.73 f
+  u_mul/mult_123_S2_30_31/S (FA_X1)                       0.05 *     1.78 r
+  u_mul/mult_123_S2_31_30/S (FA_X1)                       0.04 *     1.82 f
+  u_mul/mult_123_S2_32_29/S (FA_X1)                       0.05 *     1.87 r
+  u_mul/mult_123_S2_33_28/S (FA_X1)                       0.04 *     1.91 f
+  u_mul/mult_123_S2_34_27/S (FA_X1)                       0.05 *     1.96 r
+  u_mul/mult_123_S2_35_26/S (FA_X1)                       0.04 *     2.01 f
+  u_mul/mult_123_S2_36_25/S (FA_X1)                       0.05 *     2.05 r
+  u_mul/mult_123_S2_37_24/S (FA_X1)                       0.04 *     2.10 f
+  u_mul/mult_123_S2_38_23/S (FA_X1)                       0.05 *     2.14 r
+  u_mul/mult_123_S2_39_22/S (FA_X1)                       0.04 *     2.19 f
+  u_mul/mult_123_S2_40_21/S (FA_X1)                       0.05 *     2.24 r
+  u_mul/mult_123_S2_41_20/S (FA_X1)                       0.04 *     2.28 f
+  u_mul/mult_123_S2_42_19/S (FA_X1)                       0.05 *     2.33 r
+  u_mul/mult_123_S2_43_18/S (FA_X1)                       0.04 *     2.37 f
+  u_mul/mult_123_S2_44_17/S (FA_X1)                       0.05 *     2.42 r
+  u_mul/mult_123_S2_45_16/S (FA_X1)                       0.04 *     2.46 f
+  u_mul/mult_123_S2_46_15/S (FA_X1)                       0.05 *     2.51 r
+  u_mul/mult_123_S2_47_14/S (FA_X1)                       0.04 *     2.56 f
+  u_mul/mult_123_S2_48_13/S (FA_X1)                       0.05 *     2.60 r
+  u_mul/mult_123_S2_49_12/S (FA_X1)                       0.04 *     2.65 f
+  u_mul/mult_123_S2_50_11/S (FA_X1)                       0.05 *     2.69 r
+  u_mul/mult_123_S2_51_10/S (FA_X1)                       0.04 *     2.74 f
+  u_mul/mult_123_S2_52_9/S (FA_X1)                        0.05 *     2.78 r
+  u_mul/mult_123_S2_53_8/S (FA_X1)                        0.04 *     2.83 f
+  u_mul/mult_123_S2_54_7/S (FA_X1)                        0.05 *     2.88 r
+  u_mul/mult_123_S2_55_6/S (FA_X1)                        0.05 *     2.92 f
+  u_mul/mult_123_S2_56_5/S (FA_X1)                        0.05 *     2.97 r
+  u_mul/mult_123_S2_57_4/S (FA_X1)                        0.05 *     3.02 f
+  u_mul/mult_123_S2_58_3/S (FA_X1)                        0.05 *     3.07 r
+  u_mul/mult_123_S2_59_2/S (FA_X1)                        0.05 *     3.12 f
+  u_mul/mult_123_S2_60_1/S (FA_X1)                        0.05 *     3.16 r
+  u_mul/mult_123_S1_61_0/S (FA_X1)                        0.05 *     3.21 f
+  u_mul/result_e2_q_reg_29_/D (SDFFR_X1)                  0.00 *     3.21 f
+  data arrival time                                                  3.21
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_29_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.04       8.07
+  data required time                                                 8.07
+  --------------------------------------------------------------------------
+  data required time                                                 8.07
+  data arrival time                                                 -3.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.86
+
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_28_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_61/S (FA_X1)                        0.09 *     0.50 r
+  u_mul/mult_123_S2_3_60/S (FA_X1)                        0.05 *     0.55 f
+  u_mul/mult_123_S2_4_59/S (FA_X1)                        0.05 *     0.60 r
+  u_mul/mult_123_S2_5_54/S (FA_X1)                        0.04 *     0.65 f
+  u_mul/mult_123_S2_6_53/S (FA_X1)                        0.05 *     0.69 r
+  u_mul/mult_123_S2_7_52/S (FA_X1)                        0.04 *     0.74 f
+  u_mul/mult_123_S2_8_51/S (FA_X1)                        0.05 *     0.78 r
+  u_mul/mult_123_S2_9_50/S (FA_X1)                        0.04 *     0.83 f
+  u_mul/mult_123_S2_10_49/S (FA_X1)                       0.05 *     0.88 r
+  u_mul/mult_123_S2_11_48/S (FA_X1)                       0.04 *     0.92 f
+  u_mul/mult_123_S2_12_47/S (FA_X1)                       0.05 *     0.97 r
+  u_mul/mult_123_S2_13_46/S (FA_X1)                       0.04 *     1.01 f
+  u_mul/mult_123_S2_14_45/S (FA_X1)                       0.05 *     1.06 r
+  u_mul/mult_123_S2_15_44/S (FA_X1)                       0.04 *     1.10 f
+  u_mul/mult_123_S2_16_43/S (FA_X1)                       0.05 *     1.15 r
+  u_mul/mult_123_S2_17_42/S (FA_X1)                       0.04 *     1.19 f
+  u_mul/mult_123_S2_18_41/S (FA_X1)                       0.05 *     1.24 r
+  u_mul/mult_123_S2_19_40/S (FA_X1)                       0.04 *     1.28 f
+  u_mul/mult_123_S2_20_39/S (FA_X1)                       0.05 *     1.33 r
+  u_mul/mult_123_S2_21_38/S (FA_X1)                       0.04 *     1.37 f
+  u_mul/mult_123_S2_22_37/S (FA_X1)                       0.05 *     1.42 r
+  u_mul/mult_123_S2_23_36/S (FA_X1)                       0.04 *     1.46 f
+  u_mul/mult_123_S2_24_35/S (FA_X1)                       0.05 *     1.51 r
+  u_mul/mult_123_S2_25_34/S (FA_X1)                       0.04 *     1.56 f
+  u_mul/mult_123_S2_26_33/S (FA_X1)                       0.05 *     1.60 r
+  u_mul/mult_123_S2_27_32/S (FA_X1)                       0.04 *     1.65 f
+  u_mul/mult_123_S2_28_31/S (FA_X1)                       0.05 *     1.69 r
+  u_mul/mult_123_S2_29_30/S (FA_X1)                       0.04 *     1.74 f
+  u_mul/mult_123_S2_30_29/S (FA_X1)                       0.05 *     1.78 r
+  u_mul/mult_123_S2_31_28/S (FA_X1)                       0.04 *     1.83 f
+  u_mul/mult_123_S2_32_27/S (FA_X1)                       0.05 *     1.88 r
+  u_mul/mult_123_S2_33_26/S (FA_X1)                       0.04 *     1.92 f
+  u_mul/mult_123_S2_34_25/S (FA_X1)                       0.05 *     1.97 r
+  u_mul/mult_123_S2_35_24/S (FA_X1)                       0.04 *     2.01 f
+  u_mul/mult_123_S2_36_23/S (FA_X1)                       0.05 *     2.06 r
+  u_mul/mult_123_S2_37_22/S (FA_X1)                       0.04 *     2.10 f
+  u_mul/mult_123_S2_38_21/S (FA_X1)                       0.05 *     2.15 r
+  u_mul/mult_123_S2_39_20/S (FA_X1)                       0.05 *     2.20 f
+  u_mul/mult_123_S2_40_19/CO (FA_X1)                      0.03 *     2.22 f
+  u_mul/mult_123_S2_41_19/S (FA_X1)                       0.05 *     2.28 r
+  u_mul/mult_123_S2_42_18/S (FA_X1)                       0.04 *     2.32 f
+  u_mul/mult_123_S2_43_17/S (FA_X1)                       0.05 *     2.37 r
+  u_mul/mult_123_S2_44_16/S (FA_X1)                       0.04 *     2.41 f
+  u_mul/mult_123_S2_45_15/S (FA_X1)                       0.05 *     2.46 r
+  u_mul/mult_123_S2_46_14/S (FA_X1)                       0.04 *     2.50 f
+  u_mul/mult_123_S2_47_13/S (FA_X1)                       0.05 *     2.55 r
+  u_mul/mult_123_S2_48_12/S (FA_X1)                       0.04 *     2.59 f
+  u_mul/mult_123_S2_49_11/S (FA_X1)                       0.05 *     2.64 r
+  u_mul/mult_123_S2_50_10/S (FA_X1)                       0.04 *     2.68 f
+  u_mul/mult_123_S2_51_9/S (FA_X1)                        0.05 *     2.73 r
+  u_mul/mult_123_S2_52_8/S (FA_X1)                        0.04 *     2.78 f
+  u_mul/mult_123_S2_53_7/S (FA_X1)                        0.05 *     2.82 r
+  u_mul/mult_123_S2_54_6/S (FA_X1)                        0.05 *     2.87 f
+  u_mul/mult_123_S2_55_5/S (FA_X1)                        0.05 *     2.92 r
+  u_mul/mult_123_S2_56_4/S (FA_X1)                        0.05 *     2.97 f
+  u_mul/mult_123_S2_57_3/S (FA_X1)                        0.05 *     3.02 r
+  u_mul/mult_123_S2_58_2/S (FA_X1)                        0.05 *     3.06 f
+  u_mul/mult_123_S2_59_1/S (FA_X1)                        0.05 *     3.11 r
+  u_mul/mult_123_S1_60_0/S (FA_X1)                        0.05 *     3.16 f
+  u_mul/result_e2_q_reg_28_/D (SDFFR_X1)                  0.00 *     3.16 f
+  data arrival time                                                  3.16
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_28_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.04       8.07
+  data required time                                                 8.07
+  --------------------------------------------------------------------------
+  data required time                                                 8.07
+  data arrival time                                                 -3.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.91
+
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_27_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_61/S (FA_X1)                        0.09 *     0.50 r
+  u_mul/mult_123_S2_3_60/S (FA_X1)                        0.05 *     0.55 f
+  u_mul/mult_123_S2_4_59/S (FA_X1)                        0.05 *     0.60 r
+  u_mul/mult_123_S2_5_54/S (FA_X1)                        0.04 *     0.65 f
+  u_mul/mult_123_S2_6_53/S (FA_X1)                        0.05 *     0.69 r
+  u_mul/mult_123_S2_7_52/S (FA_X1)                        0.04 *     0.74 f
+  u_mul/mult_123_S2_8_51/S (FA_X1)                        0.05 *     0.78 r
+  u_mul/mult_123_S2_9_50/S (FA_X1)                        0.04 *     0.83 f
+  u_mul/mult_123_S2_10_49/S (FA_X1)                       0.05 *     0.88 r
+  u_mul/mult_123_S2_11_48/S (FA_X1)                       0.04 *     0.92 f
+  u_mul/mult_123_S2_12_47/S (FA_X1)                       0.05 *     0.97 r
+  u_mul/mult_123_S2_13_46/S (FA_X1)                       0.04 *     1.01 f
+  u_mul/mult_123_S2_14_45/S (FA_X1)                       0.05 *     1.06 r
+  u_mul/mult_123_S2_15_44/S (FA_X1)                       0.04 *     1.10 f
+  u_mul/mult_123_S2_16_43/S (FA_X1)                       0.05 *     1.15 r
+  u_mul/mult_123_S2_17_42/S (FA_X1)                       0.04 *     1.19 f
+  u_mul/mult_123_S2_18_41/S (FA_X1)                       0.05 *     1.24 r
+  u_mul/mult_123_S2_19_40/S (FA_X1)                       0.04 *     1.28 f
+  u_mul/mult_123_S2_20_39/S (FA_X1)                       0.05 *     1.33 r
+  u_mul/mult_123_S2_21_38/S (FA_X1)                       0.04 *     1.37 f
+  u_mul/mult_123_S2_22_37/S (FA_X1)                       0.05 *     1.42 r
+  u_mul/mult_123_S2_23_36/S (FA_X1)                       0.04 *     1.46 f
+  u_mul/mult_123_S2_24_35/S (FA_X1)                       0.05 *     1.51 r
+  u_mul/mult_123_S2_25_34/S (FA_X1)                       0.04 *     1.56 f
+  u_mul/mult_123_S2_26_33/S (FA_X1)                       0.05 *     1.60 r
+  u_mul/mult_123_S2_27_32/S (FA_X1)                       0.04 *     1.65 f
+  u_mul/mult_123_S2_28_31/S (FA_X1)                       0.05 *     1.69 r
+  u_mul/mult_123_S2_29_30/S (FA_X1)                       0.04 *     1.74 f
+  u_mul/mult_123_S2_30_29/S (FA_X1)                       0.05 *     1.78 r
+  u_mul/mult_123_S2_31_28/S (FA_X1)                       0.04 *     1.83 f
+  u_mul/mult_123_S2_32_27/S (FA_X1)                       0.05 *     1.88 r
+  u_mul/mult_123_S2_33_26/S (FA_X1)                       0.04 *     1.92 f
+  u_mul/mult_123_S2_34_25/S (FA_X1)                       0.05 *     1.97 r
+  u_mul/mult_123_S2_35_24/S (FA_X1)                       0.04 *     2.01 f
+  u_mul/mult_123_S2_36_23/S (FA_X1)                       0.05 *     2.06 r
+  u_mul/mult_123_S2_37_22/S (FA_X1)                       0.04 *     2.10 f
+  u_mul/mult_123_S2_38_21/S (FA_X1)                       0.05 *     2.15 r
+  u_mul/mult_123_S2_39_20/S (FA_X1)                       0.05 *     2.20 f
+  u_mul/mult_123_S2_40_19/S (FA_X1)                       0.05 *     2.24 r
+  u_mul/mult_123_S2_41_18/S (FA_X1)                       0.04 *     2.29 f
+  u_mul/mult_123_S2_42_17/S (FA_X1)                       0.05 *     2.33 r
+  u_mul/mult_123_S2_43_16/S (FA_X1)                       0.04 *     2.38 f
+  u_mul/mult_123_S2_44_15/S (FA_X1)                       0.05 *     2.43 r
+  u_mul/mult_123_S2_45_14/S (FA_X1)                       0.04 *     2.47 f
+  u_mul/mult_123_S2_46_13/S (FA_X1)                       0.05 *     2.52 r
+  u_mul/mult_123_S2_47_12/S (FA_X1)                       0.04 *     2.56 f
+  u_mul/mult_123_S2_48_11/S (FA_X1)                       0.05 *     2.61 r
+  u_mul/mult_123_S2_49_10/S (FA_X1)                       0.04 *     2.65 f
+  u_mul/mult_123_S2_50_9/S (FA_X1)                        0.05 *     2.70 r
+  u_mul/mult_123_S2_51_8/S (FA_X1)                        0.04 *     2.74 f
+  u_mul/mult_123_S2_52_7/S (FA_X1)                        0.05 *     2.79 r
+  u_mul/mult_123_S2_53_6/S (FA_X1)                        0.05 *     2.84 f
+  u_mul/mult_123_S2_54_5/S (FA_X1)                        0.05 *     2.89 r
+  u_mul/mult_123_S2_55_4/S (FA_X1)                        0.05 *     2.94 f
+  u_mul/mult_123_S2_56_3/S (FA_X1)                        0.05 *     2.98 r
+  u_mul/mult_123_S2_57_2/S (FA_X1)                        0.05 *     3.03 f
+  u_mul/mult_123_S2_58_1/S (FA_X1)                        0.05 *     3.08 r
+  u_mul/mult_123_S1_59_0/S (FA_X1)                        0.05 *     3.13 f
+  u_mul/result_e2_q_reg_27_/D (SDFFR_X1)                  0.00 *     3.13 f
+  data arrival time                                                  3.13
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_27_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.04       8.07
+  data required time                                                 8.07
+  --------------------------------------------------------------------------
+  data required time                                                 8.07
+  data arrival time                                                 -3.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.94
+
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_26_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_60/S (FA_X1)                        0.09 *     0.50 r
+  u_mul/mult_123_S2_3_59/S (FA_X1)                        0.05 *     0.55 f
+  u_mul/mult_123_S2_4_54/S (FA_X1)                        0.05 *     0.60 r
+  u_mul/mult_123_S2_5_53/S (FA_X1)                        0.04 *     0.64 f
+  u_mul/mult_123_S2_6_52/S (FA_X1)                        0.05 *     0.69 r
+  u_mul/mult_123_S2_7_51/S (FA_X1)                        0.04 *     0.73 f
+  u_mul/mult_123_S2_8_50/S (FA_X1)                        0.05 *     0.78 r
+  u_mul/mult_123_S2_9_49/S (FA_X1)                        0.04 *     0.82 f
+  u_mul/mult_123_S2_10_48/S (FA_X1)                       0.05 *     0.87 r
+  u_mul/mult_123_S2_11_47/S (FA_X1)                       0.04 *     0.92 f
+  u_mul/mult_123_S2_12_46/S (FA_X1)                       0.05 *     0.96 r
+  u_mul/mult_123_S2_13_45/S (FA_X1)                       0.04 *     1.01 f
+  u_mul/mult_123_S2_14_44/S (FA_X1)                       0.05 *     1.05 r
+  u_mul/mult_123_S2_15_43/S (FA_X1)                       0.04 *     1.10 f
+  u_mul/mult_123_S2_16_42/S (FA_X1)                       0.05 *     1.14 r
+  u_mul/mult_123_S2_17_41/S (FA_X1)                       0.04 *     1.19 f
+  u_mul/mult_123_S2_18_40/S (FA_X1)                       0.05 *     1.23 r
+  u_mul/mult_123_S2_19_39/S (FA_X1)                       0.04 *     1.28 f
+  u_mul/mult_123_S2_20_38/S (FA_X1)                       0.05 *     1.32 r
+  u_mul/mult_123_S2_21_37/S (FA_X1)                       0.04 *     1.37 f
+  u_mul/mult_123_S2_22_36/S (FA_X1)                       0.05 *     1.42 r
+  u_mul/mult_123_S2_23_35/S (FA_X1)                       0.04 *     1.46 f
+  u_mul/mult_123_S2_24_34/S (FA_X1)                       0.05 *     1.51 r
+  u_mul/mult_123_S2_25_33/S (FA_X1)                       0.04 *     1.55 f
+  u_mul/mult_123_S2_26_32/S (FA_X1)                       0.05 *     1.60 r
+  u_mul/mult_123_S2_27_31/S (FA_X1)                       0.04 *     1.64 f
+  u_mul/mult_123_S2_28_30/S (FA_X1)                       0.05 *     1.69 r
+  u_mul/mult_123_S2_29_29/S (FA_X1)                       0.04 *     1.73 f
+  u_mul/mult_123_S2_30_28/S (FA_X1)                       0.05 *     1.78 r
+  u_mul/mult_123_S2_31_27/S (FA_X1)                       0.05 *     1.83 f
+  u_mul/mult_123_S2_32_26/S (FA_X1)                       0.05 *     1.87 r
+  u_mul/mult_123_S2_33_25/S (FA_X1)                       0.05 *     1.92 f
+  u_mul/mult_123_S2_34_24/S (FA_X1)                       0.05 *     1.96 r
+  u_mul/mult_123_S2_35_23/S (FA_X1)                       0.04 *     2.01 f
+  u_mul/mult_123_S2_36_22/S (FA_X1)                       0.05 *     2.06 r
+  u_mul/mult_123_S2_37_21/S (FA_X1)                       0.04 *     2.10 f
+  u_mul/mult_123_S2_38_20/S (FA_X1)                       0.05 *     2.15 r
+  u_mul/mult_123_S2_39_19/S (FA_X1)                       0.04 *     2.19 f
+  u_mul/mult_123_S2_40_18/S (FA_X1)                       0.05 *     2.24 r
+  u_mul/mult_123_S2_41_17/S (FA_X1)                       0.04 *     2.28 f
+  u_mul/mult_123_S2_42_16/S (FA_X1)                       0.05 *     2.33 r
+  u_mul/mult_123_S2_43_15/S (FA_X1)                       0.04 *     2.38 f
+  u_mul/mult_123_S2_44_14/S (FA_X1)                       0.05 *     2.42 r
+  u_mul/mult_123_S2_45_13/S (FA_X1)                       0.04 *     2.47 f
+  u_mul/mult_123_S2_46_12/S (FA_X1)                       0.05 *     2.51 r
+  u_mul/mult_123_S2_47_11/S (FA_X1)                       0.04 *     2.56 f
+  u_mul/mult_123_S2_48_10/S (FA_X1)                       0.05 *     2.60 r
+  u_mul/mult_123_S2_49_9/S (FA_X1)                        0.04 *     2.65 f
+  u_mul/mult_123_S2_50_8/S (FA_X1)                        0.05 *     2.69 r
+  u_mul/mult_123_S2_51_7/S (FA_X1)                        0.04 *     2.74 f
+  u_mul/mult_123_S2_52_6/S (FA_X1)                        0.05 *     2.79 r
+  u_mul/mult_123_S2_53_5/S (FA_X1)                        0.05 *     2.84 f
+  u_mul/mult_123_S2_54_4/S (FA_X1)                        0.05 *     2.89 r
+  u_mul/mult_123_S2_55_3/S (FA_X1)                        0.05 *     2.93 f
+  u_mul/mult_123_S2_56_2/S (FA_X1)                        0.05 *     2.98 r
+  u_mul/mult_123_S2_57_1/S (FA_X1)                        0.05 *     3.03 f
+  u_mul/mult_123_S1_58_0/S (FA_X1)                        0.05 *     3.08 r
+  u_mul/result_e2_q_reg_26_/D (SDFFR_X1)                  0.00 *     3.08 r
+  data arrival time                                                  3.08
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_26_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.03       8.08
+  data required time                                                 8.08
+  --------------------------------------------------------------------------
+  data required time                                                 8.08
+  data arrival time                                                 -3.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.00
+
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_25_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_54/CO (FA_X1)                       0.09 *     0.50 f
+  u_mul/mult_123_S2_3_54/S (FA_X1)                        0.06 *     0.56 r
+  u_mul/mult_123_S2_4_53/S (FA_X1)                        0.04 *     0.60 f
+  u_mul/mult_123_S2_5_52/S (FA_X1)                        0.05 *     0.65 r
+  u_mul/mult_123_S2_6_51/S (FA_X1)                        0.04 *     0.69 f
+  u_mul/mult_123_S2_7_50/S (FA_X1)                        0.05 *     0.74 r
+  u_mul/mult_123_S2_8_49/S (FA_X1)                        0.04 *     0.78 f
+  u_mul/mult_123_S2_9_48/S (FA_X1)                        0.05 *     0.83 r
+  u_mul/mult_123_S2_10_47/S (FA_X1)                       0.04 *     0.87 f
+  u_mul/mult_123_S2_11_46/S (FA_X1)                       0.05 *     0.92 r
+  u_mul/mult_123_S2_12_45/S (FA_X1)                       0.04 *     0.96 f
+  u_mul/mult_123_S2_13_44/S (FA_X1)                       0.05 *     1.01 r
+  u_mul/mult_123_S2_14_43/S (FA_X1)                       0.04 *     1.06 f
+  u_mul/mult_123_S2_15_42/S (FA_X1)                       0.05 *     1.10 r
+  u_mul/mult_123_S2_16_41/S (FA_X1)                       0.04 *     1.15 f
+  u_mul/mult_123_S2_17_40/S (FA_X1)                       0.05 *     1.19 r
+  u_mul/mult_123_S2_18_39/S (FA_X1)                       0.04 *     1.24 f
+  u_mul/mult_123_S2_19_38/S (FA_X1)                       0.05 *     1.28 r
+  u_mul/mult_123_S2_20_37/S (FA_X1)                       0.04 *     1.33 f
+  u_mul/mult_123_S2_21_36/S (FA_X1)                       0.05 *     1.37 r
+  u_mul/mult_123_S2_22_35/S (FA_X1)                       0.04 *     1.42 f
+  u_mul/mult_123_S2_23_34/S (FA_X1)                       0.05 *     1.47 r
+  u_mul/mult_123_S2_24_33/S (FA_X1)                       0.04 *     1.51 f
+  u_mul/mult_123_S2_25_32/S (FA_X1)                       0.05 *     1.56 r
+  u_mul/mult_123_S2_26_31/S (FA_X1)                       0.04 *     1.60 f
+  u_mul/mult_123_S2_27_30/S (FA_X1)                       0.05 *     1.65 r
+  u_mul/mult_123_S2_28_29/S (FA_X1)                       0.04 *     1.69 f
+  u_mul/mult_123_S2_29_28/S (FA_X1)                       0.05 *     1.74 r
+  u_mul/mult_123_S2_30_27/S (FA_X1)                       0.05 *     1.79 f
+  u_mul/mult_123_S2_31_26/S (FA_X1)                       0.05 *     1.83 r
+  u_mul/mult_123_S2_32_25/S (FA_X1)                       0.04 *     1.88 f
+  u_mul/mult_123_S2_33_24/S (FA_X1)                       0.05 *     1.92 r
+  u_mul/mult_123_S2_34_23/S (FA_X1)                       0.04 *     1.97 f
+  u_mul/mult_123_S2_35_22/S (FA_X1)                       0.05 *     2.02 r
+  u_mul/mult_123_S2_36_21/S (FA_X1)                       0.04 *     2.06 f
+  u_mul/mult_123_S2_37_20/S (FA_X1)                       0.05 *     2.11 r
+  u_mul/mult_123_S2_38_19/S (FA_X1)                       0.04 *     2.15 f
+  u_mul/mult_123_S2_39_18/S (FA_X1)                       0.05 *     2.20 r
+  u_mul/mult_123_S2_40_17/S (FA_X1)                       0.04 *     2.24 f
+  u_mul/mult_123_S2_41_16/S (FA_X1)                       0.05 *     2.29 r
+  u_mul/mult_123_S2_42_15/S (FA_X1)                       0.04 *     2.34 f
+  u_mul/mult_123_S2_43_14/S (FA_X1)                       0.05 *     2.38 r
+  u_mul/mult_123_S2_44_13/S (FA_X1)                       0.04 *     2.43 f
+  u_mul/mult_123_S2_45_12/S (FA_X1)                       0.05 *     2.47 r
+  u_mul/mult_123_S2_46_11/S (FA_X1)                       0.04 *     2.52 f
+  u_mul/mult_123_S2_47_10/S (FA_X1)                       0.05 *     2.56 r
+  u_mul/mult_123_S2_48_9/S (FA_X1)                        0.04 *     2.61 f
+  u_mul/mult_123_S2_49_8/S (FA_X1)                        0.05 *     2.65 r
+  u_mul/mult_123_S2_50_7/S (FA_X1)                        0.04 *     2.70 f
+  u_mul/mult_123_S2_51_6/S (FA_X1)                        0.05 *     2.75 r
+  u_mul/mult_123_S2_52_5/S (FA_X1)                        0.05 *     2.80 f
+  u_mul/mult_123_S2_53_4/S (FA_X1)                        0.05 *     2.85 r
+  u_mul/mult_123_S2_54_3/S (FA_X1)                        0.05 *     2.89 f
+  u_mul/mult_123_S2_55_2/S (FA_X1)                        0.05 *     2.94 r
+  u_mul/mult_123_S2_56_1/S (FA_X1)                        0.04 *     2.99 f
+  u_mul/mult_123_S1_57_0/S (FA_X1)                        0.05 *     3.04 r
+  u_mul/result_e2_q_reg_25_/D (SDFFR_X1)                  0.00 *     3.04 r
+  data arrival time                                                  3.04
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_25_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.03       8.08
+  data required time                                                 8.08
+  --------------------------------------------------------------------------
+  data required time                                                 8.08
+  data arrival time                                                 -3.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.04
+
+
+  Startpoint: u_mul/operand_a_e1_q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_24_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_a_e1_q_reg_1_/CK (DFFR_X1)                0.00       0.19 r
+  u_mul/operand_a_e1_q_reg_1_/Q (DFFR_X1)                 0.05       0.24 f
+  u_mul/U432/Z (CLKBUF_X2)                                0.08 *     0.32 f
+  u_mul/U156/ZN (INV_X1)                                  0.06 *     0.38 r
+  u_mul/U390/ZN (NOR2_X2)                                 0.03 *     0.41 f
+  u_mul/mult_123_S2_2_54/S (FA_X1)                        0.10 *     0.50 r
+  u_mul/mult_123_S2_3_53/S (FA_X1)                        0.05 *     0.55 f
+  u_mul/mult_123_S2_4_52/S (FA_X1)                        0.05 *     0.60 r
+  u_mul/mult_123_S2_5_51/S (FA_X1)                        0.04 *     0.64 f
+  u_mul/mult_123_S2_6_50/S (FA_X1)                        0.05 *     0.69 r
+  u_mul/mult_123_S2_7_49/S (FA_X1)                        0.04 *     0.74 f
+  u_mul/mult_123_S2_8_48/S (FA_X1)                        0.05 *     0.78 r
+  u_mul/mult_123_S2_9_47/S (FA_X1)                        0.04 *     0.83 f
+  u_mul/mult_123_S2_10_46/S (FA_X1)                       0.05 *     0.87 r
+  u_mul/mult_123_S2_11_45/S (FA_X1)                       0.04 *     0.92 f
+  u_mul/mult_123_S2_12_44/S (FA_X1)                       0.05 *     0.96 r
+  u_mul/mult_123_S2_13_43/S (FA_X1)                       0.04 *     1.01 f
+  u_mul/mult_123_S2_14_42/S (FA_X1)                       0.05 *     1.06 r
+  u_mul/mult_123_S2_15_41/S (FA_X1)                       0.04 *     1.10 f
+  u_mul/mult_123_S2_16_40/S (FA_X1)                       0.05 *     1.15 r
+  u_mul/mult_123_S2_17_39/S (FA_X1)                       0.04 *     1.19 f
+  u_mul/mult_123_S2_18_38/S (FA_X1)                       0.05 *     1.24 r
+  u_mul/mult_123_S2_19_37/S (FA_X1)                       0.04 *     1.28 f
+  u_mul/mult_123_S2_20_36/S (FA_X1)                       0.05 *     1.33 r
+  u_mul/mult_123_S2_21_35/S (FA_X1)                       0.04 *     1.37 f
+  u_mul/mult_123_S2_22_34/S (FA_X1)                       0.05 *     1.42 r
+  u_mul/mult_123_S2_23_33/S (FA_X1)                       0.04 *     1.46 f
+  u_mul/mult_123_S2_24_32/S (FA_X1)                       0.05 *     1.51 r
+  u_mul/mult_123_S2_25_31/S (FA_X1)                       0.04 *     1.56 f
+  u_mul/mult_123_S2_26_30/S (FA_X1)                       0.05 *     1.60 r
+  u_mul/mult_123_S2_27_29/S (FA_X1)                       0.04 *     1.65 f
+  u_mul/mult_123_S2_28_28/S (FA_X1)                       0.05 *     1.69 r
+  u_mul/mult_123_S2_29_27/S (FA_X1)                       0.04 *     1.74 f
+  u_mul/mult_123_S2_30_26/S (FA_X1)                       0.05 *     1.79 r
+  u_mul/mult_123_S2_31_25/S (FA_X1)                       0.05 *     1.83 f
+  u_mul/mult_123_S2_32_24/S (FA_X1)                       0.05 *     1.88 r
+  u_mul/mult_123_S2_33_23/S (FA_X1)                       0.04 *     1.92 f
+  u_mul/mult_123_S2_34_22/S (FA_X1)                       0.05 *     1.97 r
+  u_mul/mult_123_S2_35_21/S (FA_X1)                       0.04 *     2.01 f
+  u_mul/mult_123_S2_36_20/S (FA_X1)                       0.05 *     2.06 r
+  u_mul/mult_123_S2_37_19/S (FA_X1)                       0.05 *     2.11 f
+  u_mul/mult_123_S2_38_18/S (FA_X1)                       0.05 *     2.15 r
+  u_mul/mult_123_S2_39_17/S (FA_X1)                       0.04 *     2.20 f
+  u_mul/mult_123_S2_40_16/S (FA_X1)                       0.05 *     2.24 r
+  u_mul/mult_123_S2_41_15/S (FA_X1)                       0.04 *     2.29 f
+  u_mul/mult_123_S2_42_14/S (FA_X1)                       0.05 *     2.33 r
+  u_mul/mult_123_S2_43_13/S (FA_X1)                       0.04 *     2.38 f
+  u_mul/mult_123_S2_44_12/S (FA_X1)                       0.05 *     2.43 r
+  u_mul/mult_123_S2_45_11/S (FA_X1)                       0.04 *     2.47 f
+  u_mul/mult_123_S2_46_10/S (FA_X1)                       0.05 *     2.52 r
+  u_mul/mult_123_S2_47_9/S (FA_X1)                        0.04 *     2.56 f
+  u_mul/mult_123_S2_48_8/S (FA_X1)                        0.05 *     2.61 r
+  u_mul/mult_123_S2_49_7/S (FA_X1)                        0.04 *     2.65 f
+  u_mul/mult_123_S2_50_6/S (FA_X1)                        0.05 *     2.70 r
+  u_mul/mult_123_S2_51_5/S (FA_X1)                        0.05 *     2.75 f
+  u_mul/mult_123_S2_52_4/S (FA_X1)                        0.05 *     2.80 r
+  u_mul/mult_123_S2_53_3/S (FA_X1)                        0.04 *     2.84 f
+  u_mul/mult_123_S2_54_2/S (FA_X1)                        0.05 *     2.89 r
+  u_mul/mult_123_S2_55_1/S (FA_X1)                        0.05 *     2.94 f
+  u_mul/mult_123_S1_56_0/S (FA_X1)                        0.05 *     2.99 r
+  u_mul/result_e2_q_reg_24_/D (SDFFR_X1)                  0.00 *     2.99 r
+  data arrival time                                                  2.99
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.19       8.19
+  clock uncertainty                                      -0.08       8.11
+  u_mul/result_e2_q_reg_24_/CK (SDFFR_X1)                 0.00       8.11 r
+  library setup time                                     -0.03       8.09
+  data required time                                                 8.09
+  --------------------------------------------------------------------------
+  data required time                                                 8.09
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.09
+
+
+  Startpoint: u_mul/operand_b_e1_q_reg_32_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_23_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_b_e1_q_reg_32_/CK (DFFR_X2)               0.00       0.19 r
+  u_mul/operand_b_e1_q_reg_32_/QN (DFFR_X2)               0.10       0.29 r
+  u_mul/U396/ZN (NOR2_X1)                                 0.04 *     0.34 f
+  u_mul/U187/Z (CLKBUF_X2)                                0.11 *     0.45 f
+  u_mul/mult_123_S2_3_52/S (FA_X1)                        0.09 *     0.54 r
+  u_mul/mult_123_S2_4_51/S (FA_X1)                        0.04 *     0.58 f
+  u_mul/mult_123_S2_5_50/S (FA_X1)                        0.05 *     0.63 r
+  u_mul/mult_123_S2_6_49/S (FA_X1)                        0.04 *     0.67 f
+  u_mul/mult_123_S2_7_48/S (FA_X1)                        0.05 *     0.72 r
+  u_mul/mult_123_S2_8_47/S (FA_X1)                        0.04 *     0.77 f
+  u_mul/mult_123_S2_9_46/S (FA_X1)                        0.05 *     0.81 r
+  u_mul/mult_123_S2_10_45/S (FA_X1)                       0.04 *     0.86 f
+  u_mul/mult_123_S2_11_44/S (FA_X1)                       0.05 *     0.90 r
+  u_mul/mult_123_S2_12_43/S (FA_X1)                       0.04 *     0.95 f
+  u_mul/mult_123_S2_13_42/S (FA_X1)                       0.05 *     0.99 r
+  u_mul/mult_123_S2_14_41/S (FA_X1)                       0.04 *     1.04 f
+  u_mul/mult_123_S2_15_40/S (FA_X1)                       0.05 *     1.08 r
+  u_mul/mult_123_S2_16_39/S (FA_X1)                       0.04 *     1.13 f
+  u_mul/mult_123_S2_17_38/S (FA_X1)                       0.05 *     1.18 r
+  u_mul/mult_123_S2_18_37/S (FA_X1)                       0.04 *     1.22 f
+  u_mul/mult_123_S2_19_36/S (FA_X1)                       0.05 *     1.27 r
+  u_mul/mult_123_S2_20_35/S (FA_X1)                       0.04 *     1.31 f
+  u_mul/mult_123_S2_21_34/S (FA_X1)                       0.05 *     1.36 r
+  u_mul/mult_123_S2_22_33/S (FA_X1)                       0.04 *     1.40 f
+  u_mul/mult_123_S2_23_32/S (FA_X1)                       0.05 *     1.45 r
+  u_mul/mult_123_S2_24_31/S (FA_X1)                       0.04 *     1.50 f
+  u_mul/mult_123_S2_25_30/S (FA_X1)                       0.05 *     1.54 r
+  u_mul/mult_123_S2_26_29/S (FA_X1)                       0.04 *     1.59 f
+  u_mul/mult_123_S2_27_28/S (FA_X1)                       0.05 *     1.63 r
+  u_mul/mult_123_S2_28_27/S (FA_X1)                       0.04 *     1.68 f
+  u_mul/mult_123_S2_29_26/S (FA_X1)                       0.05 *     1.72 r
+  u_mul/mult_123_S2_30_25/S (FA_X1)                       0.04 *     1.77 f
+  u_mul/mult_123_S2_31_24/S (FA_X1)                       0.05 *     1.82 r
+  u_mul/mult_123_S2_32_23/S (FA_X1)                       0.04 *     1.86 f
+  u_mul/mult_123_S2_33_22/S (FA_X1)                       0.05 *     1.91 r
+  u_mul/mult_123_S2_34_21/S (FA_X1)                       0.04 *     1.95 f
+  u_mul/mult_123_S2_35_20/S (FA_X1)                       0.05 *     2.00 r
+  u_mul/mult_123_S2_36_19/S (FA_X1)                       0.05 *     2.04 f
+  u_mul/mult_123_S2_37_18/S (FA_X1)                       0.05 *     2.09 r
+  u_mul/mult_123_S2_38_17/S (FA_X1)                       0.04 *     2.14 f
+  u_mul/mult_123_S2_39_16/S (FA_X1)                       0.05 *     2.18 r
+  u_mul/mult_123_S2_40_15/S (FA_X1)                       0.04 *     2.23 f
+  u_mul/mult_123_S2_41_14/S (FA_X1)                       0.05 *     2.27 r
+  u_mul/mult_123_S2_42_13/S (FA_X1)                       0.04 *     2.32 f
+  u_mul/mult_123_S2_43_12/S (FA_X1)                       0.05 *     2.36 r
+  u_mul/mult_123_S2_44_11/S (FA_X1)                       0.04 *     2.41 f
+  u_mul/mult_123_S2_45_10/S (FA_X1)                       0.05 *     2.45 r
+  u_mul/mult_123_S2_46_9/S (FA_X1)                        0.04 *     2.50 f
+  u_mul/mult_123_S2_47_8/S (FA_X1)                        0.05 *     2.55 r
+  u_mul/mult_123_S2_48_7/S (FA_X1)                        0.04 *     2.59 f
+  u_mul/mult_123_S2_49_6/S (FA_X1)                        0.05 *     2.64 r
+  u_mul/mult_123_S2_50_5/S (FA_X1)                        0.05 *     2.69 f
+  u_mul/mult_123_S2_51_4/S (FA_X1)                        0.05 *     2.74 r
+  u_mul/mult_123_S2_52_3/S (FA_X1)                        0.04 *     2.78 f
+  u_mul/mult_123_S2_53_2/S (FA_X1)                        0.05 *     2.83 r
+  u_mul/mult_123_S2_54_1/S (FA_X1)                        0.05 *     2.87 f
+  u_mul/mult_123_S1_55_0/S (FA_X1)                        0.05 *     2.93 r
+  u_mul/result_e2_q_reg_23_/D (SDFFR_X1)                  0.00 *     2.93 r
+  data arrival time                                                  2.93
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.20       8.20
+  clock uncertainty                                      -0.08       8.12
+  u_mul/result_e2_q_reg_23_/CK (SDFFR_X1)                 0.00       8.12 r
+  library setup time                                     -0.03       8.09
+  data required time                                                 8.09
+  --------------------------------------------------------------------------
+  data required time                                                 8.09
+  data arrival time                                                 -2.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.16
+
+
+  Startpoint: u_mul/operand_b_e1_q_reg_32_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: u_mul/result_e2_q_reg_22_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.19       0.19
+  u_mul/operand_b_e1_q_reg_32_/CK (DFFR_X2)               0.00       0.19 r
+  u_mul/operand_b_e1_q_reg_32_/QN (DFFR_X2)               0.10       0.29 r
+  u_mul/U396/ZN (NOR2_X1)                                 0.04 *     0.34 f
+  u_mul/U187/Z (CLKBUF_X2)                                0.11 *     0.45 f
+  u_mul/mult_123_S2_3_51/S (FA_X1)                        0.09 *     0.54 r
+  u_mul/mult_123_S2_4_50/S (FA_X1)                        0.04 *     0.58 f
+  u_mul/mult_123_S2_5_49/S (FA_X1)                        0.05 *     0.63 r
+  u_mul/mult_123_S2_6_48/S (FA_X1)                        0.04 *     0.67 f
+  u_mul/mult_123_S2_7_47/S (FA_X1)                        0.05 *     0.72 r
+  u_mul/mult_123_S2_8_46/S (FA_X1)                        0.04 *     0.77 f
+  u_mul/mult_123_S2_9_45/S (FA_X1)                        0.05 *     0.81 r
+  u_mul/mult_123_S2_10_44/S (FA_X1)                       0.04 *     0.86 f
+  u_mul/mult_123_S2_11_43/S (FA_X1)                       0.05 *     0.90 r
+  u_mul/mult_123_S2_12_42/S (FA_X1)                       0.04 *     0.95 f
+  u_mul/mult_123_S2_13_41/S (FA_X1)                       0.05 *     0.99 r
+  u_mul/mult_123_S2_14_40/S (FA_X1)                       0.04 *     1.04 f
+  u_mul/mult_123_S2_15_39/S (FA_X1)                       0.05 *     1.09 r
+  u_mul/mult_123_S2_16_38/S (FA_X1)                       0.04 *     1.13 f
+  u_mul/mult_123_S2_17_37/S (FA_X1)                       0.05 *     1.18 r
+  u_mul/mult_123_S2_18_36/S (FA_X1)                       0.05 *     1.22 f
+  u_mul/mult_123_S2_19_35/S (FA_X1)                       0.05 *     1.27 r
+  u_mul/mult_123_S2_20_34/S (FA_X1)                       0.04 *     1.31 f
+  u_mul/mult_123_S2_21_33/S (FA_X1)                       0.05 *     1.36 r
+  u_mul/mult_123_S2_22_32/S (FA_X1)                       0.04 *     1.40 f
+  u_mul/mult_123_S2_23_31/S (FA_X1)                       0.05 *     1.45 r
+  u_mul/mult_123_S2_24_30/S (FA_X1)                       0.04 *     1.50 f
+  u_mul/mult_123_S2_25_29/S (FA_X1)                       0.05 *     1.54 r
+  u_mul/mult_123_S2_26_28/S (FA_X1)                       0.04 *     1.59 f
+  u_mul/mult_123_S2_27_27/S (FA_X1)                       0.05 *     1.63 r
+  u_mul/mult_123_S2_28_26/S (FA_X1)                       0.04 *     1.68 f
+  u_mul/mult_123_S2_29_25/S (FA_X1)                       0.05 *     1.72 r
+  u_mul/mult_123_S2_30_24/S (FA_X1)                       0.04 *     1.77 f
+  u_mul/mult_123_S2_31_23/S (FA_X1)                       0.05 *     1.82 r
+  u_mul/mult_123_S2_32_22/S (FA_X1)                       0.05 *     1.86 f
+  u_mul/mult_123_S2_33_21/S (FA_X1)                       0.05 *     1.91 r
+  u_mul/mult_123_S2_34_20/S (FA_X1)                       0.05 *     1.95 f
+  u_mul/mult_123_S2_35_19/S (FA_X1)                       0.05 *     2.00 r
+  u_mul/mult_123_S2_36_18/S (FA_X1)                       0.04 *     2.05 f
+  u_mul/mult_123_S2_37_17/S (FA_X1)                       0.05 *     2.09 r
+  u_mul/mult_123_S2_38_16/S (FA_X1)                       0.04 *     2.14 f
+  u_mul/mult_123_S2_39_15/S (FA_X1)                       0.05 *     2.18 r
+  u_mul/mult_123_S2_40_14/S (FA_X1)                       0.04 *     2.23 f
+  u_mul/mult_123_S2_41_13/S (FA_X1)                       0.05 *     2.27 r
+  u_mul/mult_123_S2_42_12/S (FA_X1)                       0.04 *     2.32 f
+  u_mul/mult_123_S2_43_11/S (FA_X1)                       0.05 *     2.36 r
+  u_mul/mult_123_S2_44_10/S (FA_X1)                       0.04 *     2.41 f
+  u_mul/mult_123_S2_45_9/S (FA_X1)                        0.05 *     2.45 r
+  u_mul/mult_123_S2_46_8/S (FA_X1)                        0.04 *     2.50 f
+  u_mul/mult_123_S2_47_7/S (FA_X1)                        0.05 *     2.54 r
+  u_mul/mult_123_S2_48_6/S (FA_X1)                        0.05 *     2.59 f
+  u_mul/mult_123_S2_49_5/S (FA_X1)                        0.05 *     2.64 r
+  u_mul/mult_123_S2_50_4/S (FA_X1)                        0.05 *     2.69 f
+  u_mul/mult_123_S2_51_3/S (FA_X1)                        0.05 *     2.74 r
+  u_mul/mult_123_S2_52_2/S (FA_X1)                        0.04 *     2.78 f
+  u_mul/mult_123_S2_53_1/S (FA_X1)                        0.05 *     2.83 r
+  u_mul/mult_123_S1_54_0/S (FA_X1)                        0.05 *     2.88 f
+  u_mul/result_e2_q_reg_22_/D (SDFFR_X1)                  0.00 *     2.88 f
+  data arrival time                                                  2.88
+
+  clock clk_i (rise edge)                                 8.00       8.00
+  clock network delay (propagated)                        0.20       8.20
+  clock uncertainty                                      -0.08       8.12
+  u_mul/result_e2_q_reg_22_/CK (SDFFR_X1)                 0.00       8.12 r
+  library setup time                                     -0.04       8.08
+  data required time                                                 8.08
+  --------------------------------------------------------------------------
+  data required time                                                 8.08
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.20
+
+
+1
