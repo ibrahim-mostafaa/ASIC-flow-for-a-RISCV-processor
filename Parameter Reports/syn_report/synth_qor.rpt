@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : riscv_core
+Version: G-2012.06-SP2
+Date   : Mon Dec 25 14:55:09 2017
+****************************************
+
+
+  Timing Path Group 'clk_i'
+  -----------------------------------
+  Levels of Logic:              65.00
+  Critical Path Length:          4.34
+  Critical Path Slack:           3.54
+  Critical Path Clk Period:      8.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.05
+  Total Hold Violation:        -27.46
+  No. of Hold Violations:     1927.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        151
+  Hierarchical Port Count:       3892
+  Leaf Cell Count:              31829
+  Buf/Inv Cell Count:            3224
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     25363
+  Sequential Cell Count:         6466
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    36216.166476
+  Noncombinational Area: 33689.698739
+  Buf/Inv Area:           1995.000007
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             69905.865215
+  Design Area:           69905.865215
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         35462
+  Nets With Violations:           168
+  Max Trans Violations:           168
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: localhost.localdomain
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.07
+  Logic Optimization:                 33.14
+  Mapping Optimization:              136.63
+  -----------------------------------------
+  Overall Compile Time:              245.28
+  Overall Compile Wall Clock Time:   393.68
+
+1

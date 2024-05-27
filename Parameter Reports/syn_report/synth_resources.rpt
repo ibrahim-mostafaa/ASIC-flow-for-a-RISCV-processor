@@ -1,0 +1,40 @@
+ 
+****************************************
+Report : resources
+Design : riscv_core
+Version: G-2012.06-SP2
+Date   : Mon Dec 25 14:55:09 2017
+****************************************
+
+
+Resource Sharing Report 
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| u_lsu/r83               |            |               |                      |
+|          | DW01_add     | width=32   |               | u_lsu/add_175        |
+| u_lsu/r85               |            |               |                      |
+|          | DW01_add     | width=32   |               | u_lsu/add_177        |
+| u_lsu/r87               |            |               |                      |
+|          | DW01_cmp2    | width=32   |               | u_lsu/gte_299        |
+| u_lsu/r89               |            |               |                      |
+|          | DW01_cmp2    | width=32   |               | u_lsu/lte_299        |
+| u_csr/r66               |            |               |                      |
+|          | DW01_add     | width=6    |               | u_csr/add_220        |
+| u_lsu/u_lsu_request/r53 |            |               |                      |
+|          | DW01_inc     | width=2    |               | u_lsu/u_lsu_request/add_493 |
+| u_lsu/u_lsu_request/r55 |            |               |                      |
+|          | DW01_dec     | width=2    |               | u_lsu/u_lsu_request/sub_496 |
+| u_frontend/u_decode/genblk1.u_fifo/r78               |                      |
+|          | DW01_inc     | width=2    |               | u_frontend/u_decode/genblk1.u_fifo/add_404 |
+| u_frontend/u_decode/genblk1.u_fifo/r80               |                      |
+|          | DW01_dec     | width=2    |               | u_frontend/u_decode/genblk1.u_fifo/sub_406 |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1
