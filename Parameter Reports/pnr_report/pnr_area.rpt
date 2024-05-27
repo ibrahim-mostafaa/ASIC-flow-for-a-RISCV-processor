@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : area
+Design : riscv_core
+Version: G-2012.06-ICC-SP2
+Date   : Mon Dec 25 15:49:45 2017
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_ff1p25vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ff1p25vn40c.db)
+
+Number of ports:                          299
+Number of nets:                          4728
+Number of cells:                         3238
+Number of combinational cells:           2565
+Number of sequential cells:               654
+Number of macros:                           0
+Number of buf/inv:                       1475
+Number of references:                      68
+
+Combinational area:       42374.864375
+Buf/Inv area:             6046.977939
+Noncombinational area:    34778.170761
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          77153.035136
+Total area:                 undefined
+1
