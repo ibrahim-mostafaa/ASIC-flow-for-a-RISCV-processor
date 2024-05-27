@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : riscv_core
+Version: G-2012.06-SP2
+Date   : Mon Dec 25 14:55:07 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ff1p25vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ff1p25vn40c.db)
+
+Number of ports:                          299
+Number of nets:                          3520
+Number of cells:                         2050
+Number of combinational cells:           1377
+Number of sequential cells:               654
+Number of macros:                           0
+Number of buf/inv:                        335
+Number of references:                      67
+
+Combinational area:       36216.166476
+Buf/Inv area:             1995.000007
+Noncombinational area:    33689.698739
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          69905.865215
+Total area:                 undefined
+1
